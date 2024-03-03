@@ -14,13 +14,13 @@ class Dog(Animal):
         print(f"{self.name} gav gav!!")
 
 
-# animal = Animal("Animal")
-# animal.speak()
-#
-# dog = Dog("Dog")
-#
-# dog.speak()
-# dog.bark()
+animal = Animal("Animal")
+animal.speak()
+
+dog = Dog("Dog")
+
+dog.speak()
+dog.bark()
 
 class BreedDog(Animal):
 
@@ -38,5 +38,18 @@ class BreedDog(Animal):
 breed_dog = BreedDog("Hot","Dog")
 
 breed_dog.speak()
+
+
+class Myclass:
+    def __init__(self, value):
+        self.__my_private_method(value)
+
+    def __my_private_method(self, value):
+        return f"Private method called me with {value}"
+
+
+obj = Myclass(52)
+
+
 
 
