@@ -18,6 +18,7 @@ def define_winner(player, bot):
 
         messagebox.showinfo("Result","You won 🏆🍾")
 
+        label.config(text=int(label.cget("")))
 
 
     elif (player == "r" and bot == "p") or (player == "p" and bot == "s") or (player == "s" and bot == "r"):
